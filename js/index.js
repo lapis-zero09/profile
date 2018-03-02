@@ -154,14 +154,23 @@
 
 
 (function () {
-  var $main = $('#main');
+    var $main = $('#main');
+    var $world = $main.find('.world');
 
-  setTimeout(function () {
-      $main.toggleClass('play');
-      $main.find('#skills-slider').yslider(['Python', 'Ruby', 'SQL', 'Java', 'JS'], { speed: 150, pause: 500, delay: 2600 });
-      $main.find('#like-slider').yslider(['Programming', 'Machine Learning', 'Security', 'Blockchain', 'good Food & Drink', 'Corgi'], { speed: 150, pause: 500, delay: 2600 });
+    $main.find('.viewport').mousemove(function (e) {
+        var Vertical = 4,
+            Horizontal = 2,
+            Yangle = -Vertical + (e.clientY / window.innerHeight) * 2 * Vertical,
+            Xangle = -Horizontal + (e.clientX / window.innerWidth) * 2 * Horizontal;
 
-      $(window).resize();
-  }, 300);
+        $world.css('transform', 'rotateX( ' + -Yangle + 'deg) rotateY( ' + Xangle + 'deg)');
+    });
 
+    setTimeout(function () {
+        $main.toggleClass('play');
+        $main.find('#skills-slider').yslider(['Python', 'Ruby', 'SQL', 'Java', 'JS'], { speed: 150, pause: 500, delay: 2600 });
+        $main.find('#like-slider').yslider(['Programming', 'Machine Learning', 'Security', 'Blockchain', 'good Food & Drink', 'Corgi'], { speed: 150, pause: 500, delay: 2600 });
+
+        $(window).resize();
+    }, 300);
 })();
