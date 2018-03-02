@@ -326,7 +326,10 @@ a.nice-link:hover:after {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*background-size: cover;*/
+    background-size: cover;
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
 }
 #main .world>div {
     position: absolute
