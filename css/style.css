@@ -323,7 +323,10 @@ a.nice-link:hover:after {
     z-index: 0;
     opacity: 0;
     background-image: url(../img/bg.jpg);
+    background-position: center top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #main .world>div {
     position: absolute
