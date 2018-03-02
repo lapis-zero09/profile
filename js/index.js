@@ -154,6 +154,10 @@
 
 
 (function () {
+    $(window).on('touchmove.noScroll', function(e) {
+        e.preventDefault();
+    });
+    
     var $main = $('#main');
     var $world = $main.find('.world');
 
