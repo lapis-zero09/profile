@@ -134,7 +134,7 @@ section {
 .y-slider>div ul>li {
     display: block;
     white-space: nowrap;
-    color: #fecb81
+    color: #FECB81
 }
 a.nice-link {
     position: relative;
@@ -320,13 +320,12 @@ a.nice-link:hover:after {
     height: 100%;
     pointer-events: none;
     -webkit-touch-callout: none;
-    /*z-index: 0;*/
     opacity: 0;
     background-image: url(../img/mask.png);
-    background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
     @media (max-width: @iphone-screen) {
         background-attachment: scroll;
     }
@@ -406,7 +405,7 @@ a.nice-link:hover:after {
     height: 100%
 }
 #main-hello-info>div {
-    font: 300 20% 'Dosis';
+    font: 300 30% 'Dosis';
     position: absolute;
     bottom: 0
 }
@@ -436,7 +435,7 @@ a.nice-link:hover:after {
     top: 23%;
     height: 0;
     color: transparent;
-    border-left: 3px solid #2c2c2c
+    border-left: 3px solid #2c2c2c;
 }
 #main-hello-info>div>div .name {
     position: relative;
@@ -446,14 +445,14 @@ a.nice-link:hover:after {
     position: absolute;
     left: 0;
     bottom: 0;
-    font: 100 105% 'Open Sans';
+    font: 100 155% 'Press Start 2P';
     line-height: 78%
 }
 #main-hello-info>div>div .name>strong span {
     position: absolute;
     bottom: -2%;
     left: 95%;
-    font: 100 50% 'Open Sans'
+    font: 100 25% 'Press Start 2P'
 }
 #main-hello {
     -webkit-transform: rotate(-10deg);
@@ -572,33 +571,31 @@ a.nice-link:hover:after {
     padding: 2% 2% 2% 10%;
     color: #fff;
     background: rgba(0, 0, 0, .85);
-    font: 320% 'Press Start 2P';
+    font: 321% 'Press Start 2P';
     text-transform: uppercase;
     white-space: nowrap;
     opacity: 0
 }
 #main-skills span {
-    color: #fecb81
+    color: #FECB81
 }
 #main-name {
-    right: -30%;
+    right: -50%;
     top: 30%;
     text-align: right;
-}
-#main-name>div>div {
-    font: 500 220% 'Ubuntu';
-    opacity: 0;
     color: #E18601;
     text-shadow:1px 0 0 #FFFFFF, 1px 1px 0 #FFFFFF, 0 1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, -1px 0 0 #FFFFFF, -1px -1px 0 #FFFFFF, 0 -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF;
 }
+#main-name>div>div {
+    font: 500 220% 'Press Start 2P';
+    display: block;
+    opacity: 0;
+}
 #main-name>div>span {
-    font: 400 100% 'Lato';
+    font: 500 150% 'Press Start 2P';
     display: block;
     text-transform: uppercase;
     opacity: 0;
-    color: #FFFFFF;
-    text-shadow:1px 0 0 #000000, 1px 1px 0 #000000, 0 1px 0 #000000, -1px 1px 0 #000000, -1px 0 0 #000000, -1px -1px 0 #000000, 0 -1px 0 #000000, 1px -1px 0 #000000;
-
 }
 html.csstransforms3d.preserve3d #main-box2 {
     -webkit-transform: translate3D(0, 65px, -85px) rotate(-30deg);
@@ -772,7 +769,7 @@ html.csstransforms3d.preserve3d #main-name div {
     -moz-transition: .6s 1.7s cubic-bezier(.24, 0, .13, 1.44);
     -o-transition: .6s 1.7s cubic-bezier(.24, 0, .13, 1.44);
     transition: .6s 1.7s cubic-bezier(.24, 0, .13, 1.44);
-    right: 3%
+    right: 6%;
 }
 #main.play #main-name>div>div {
     -webkit-transition: .6s 1.85s cubic-bezier(.24, 0, .13, 1.44);
@@ -780,7 +777,7 @@ html.csstransforms3d.preserve3d #main-name div {
     -o-transition: .6s 1.85s cubic-bezier(.24, 0, .13, 1.44);
     transition: .6s 1.85s cubic-bezier(.24, 0, .13, 1.44);
     opacity: 1;
-    margin-right: 25%
+    margin-right: -80%
 }
 #main.play #main-name>div>span {
     -webkit-transition: .6s 1.85s cubic-bezier(.24, 0, .13, 1.44);
@@ -788,7 +785,7 @@ html.csstransforms3d.preserve3d #main-name div {
     -o-transition: .6s 1.85s cubic-bezier(.24, 0, .13, 1.44);
     transition: .6s 1.85s cubic-bezier(.24, 0, .13, 1.44);
     opacity: 1;
-    margin-right: 30%;
+    /*margin-right: -80%;*/
 }
 #main.play #main-skills {
     -webkit-transition: .6s 1s ease-out;

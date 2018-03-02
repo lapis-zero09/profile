@@ -169,7 +169,7 @@
     setTimeout(function () {
         $main.toggleClass('play');
         $main.find('#skills-slider').yslider(['Python', 'Ruby', 'SQL', 'Java', 'JS'], { speed: 150, pause: 500, delay: 2600 });
-        $main.find('#like-slider').yslider(['Programming', 'Machine Learning', 'Security', 'Blockchain', 'good Food & Drink', 'Corgi'], { speed: 150, pause: 500, delay: 2600 });
+        $main.find('#like-slider').yslider(['Programming', 'Data science', 'Security', 'Blockchain', 'good Food & Drink', 'Corgi'], { speed: 150, pause: 500, delay: 2600 });
 
         $(window).resize();
     }, 300);
