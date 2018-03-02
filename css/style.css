@@ -446,8 +446,8 @@ a.nice-link:hover:after {
     -o-transform: zoom(0);
     transform: zoom(0);
     position: absolute;
-    right: 15%;
-    top: 80%;
+    left: 90%;
+    top: 85%;
     white-space: nowrap;
     text-transform: uppercase;
     font: 400 60% 'Lato'
