@@ -320,7 +320,7 @@ a.nice-link:hover:after {
     height: 100%;
     pointer-events: none;
     -webkit-touch-callout: none;
-    z-index: 0;
+    /*z-index: 0;*/
     opacity: 0;
     background-image: url(../img/bg.jpg);
     background-position: center center;
