@@ -334,7 +334,7 @@ a.nice-link:hover:after {
     pointer-events: none;
     -webkit-touch-callout: none;
     opacity: 0;
-    background-image: url(../img/mask.jpg);
+    background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
